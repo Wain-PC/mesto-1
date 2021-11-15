@@ -1,0 +1,9 @@
+.foto__info {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px 31px 21px;
+    margin: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

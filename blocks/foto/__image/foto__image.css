@@ -1,0 +1,8 @@
+.foto__image {
+    width: 282px;
+    height: 282px;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
