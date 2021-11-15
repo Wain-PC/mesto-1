@@ -20,3 +20,9 @@
 @import url(../blocks/foto/__heart/foto__heart.css);
 @import url(../blocks/copyright/copyright.css);
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__button/popup__button.css);
+@import url(../blocks/popup/__close/popup__close.css);
+@import url(../blocks/popup/__name/popup__name.css);
+@import url(../blocks/popup/__subname/popup__subname.css);
+@import url(../blocks/popup/__title/popup__title.css);
