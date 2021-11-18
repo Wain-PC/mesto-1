@@ -2,7 +2,7 @@ const popupContainer = document.querySelector('.popup__container');
 const popup = document.querySelector('.popup');
 const formElement = document.querySelector('.form');
 const edit = document.querySelector('.profile__edit-button');
-const formExit = document.querySelector('.form__exit');
+const popupExit = document.querySelector('.popup__container-exit');
 const profileTitle = document.querySelector('.profile__title');
 const profileSubtitle = document.querySelector('.profile__subtitle');
 const nameInput = formElement.querySelector('.form__input-name_profile');
@@ -26,5 +26,5 @@ function formSubmitHandler(evt) {
 
 document.querySelector('.form')
 edit.addEventListener('click', open);
-formExit.addEventListener('click', close);
+popupExit.addEventListener('click', close);
 formElement.addEventListener('submit', formSubmitHandler);
