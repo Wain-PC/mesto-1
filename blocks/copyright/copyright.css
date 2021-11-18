@@ -7,3 +7,9 @@
     padding: 0;
 }
 
+@media screen and (min-width: 767px) {
+    .copyright {
+        font-size: 18px;
+    }
+}
+

@@ -8,6 +8,8 @@
     .header__logo {
         margin-bottom: 41px;
         margin-top: 45px;
+        width: 142px;
+        height: 33px;
     }
 }
 @media screen and (min-width: 880px) {

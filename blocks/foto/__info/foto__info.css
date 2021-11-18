@@ -4,6 +4,12 @@
     justify-content: space-between;
     padding: 25px 15px 31px 21px;
     margin: 0;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media screen and (min-width: 767px) {
+    .foto__info {
+        padding-right: 20px;
+    }
 }
