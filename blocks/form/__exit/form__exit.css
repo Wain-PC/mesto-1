@@ -1,4 +1,4 @@
-.button__exit {
+.form__exit {
     position: absolute;
     top: -30px;
     right: 0;
@@ -12,12 +12,12 @@
     cursor: pointer;
 }
 
-.button__exit:hover {
+.form__exit:hover {
     opacity: 0.6;
 }
 
 @media screen and (min-width: 767px) {
-    .button__exit {
+    .form__exit {
         width: 32px;
         height: 32px;
         top: -36px;

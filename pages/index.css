@@ -30,6 +30,6 @@
 @import url(../blocks/popup/_display/popup__container-display.css);
 @import url(../blocks/form/__input-name/_profile/form__input-name_profile.css);
 @import url(../blocks/form/__input-subname/_profile/form__input-subname_profile.css);
+@import url(../blocks/form/__exit/form__exit.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
-@import url(../blocks/button/__exit/button__exit.css);
