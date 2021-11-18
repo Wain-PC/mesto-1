@@ -1,40 +1,30 @@
-/*form_open*/
-let formElement = document.querySelector('.form');
-let pop_up = document.querySelector('.popup');
-let edit = document.querySelector('.profile__edit-button');
-let close = document.querySelector('.popup__exit');
-let profileName = document.querySelector('.profile__title');
-let profileSubName = document.querySelector('.profile__subtitle');
-let nameInput = document.querySelector('.popup__input_profile_name');
-let jobInput = document.querySelector('.popup__input_profile_subname');
+const popupContainer = document.querySelector('.popup__container');
+const popup = document.querySelector('.popup');
+const formElement = document.querySelector('.form');
+const edit = document.querySelector('.profile__edit-button');
+const buttonExit = document.querySelector('.button__exit');
+const profileTitle = document.querySelector('.profile__title');
+const profileSubtitle = document.querySelector('.profile__subtitle');
+const nameInput = formElement.querySelector('.form__input-name_profile');
+const subnameInput = formElement.querySelector('.form__input-subname_profile');
+const profile = document.querySelector('.profile');
 
-
-//открытие попапа
-function clicked() {
-
-    profileName.textContent = nameInput.value;
-    profileSubName.textContent = jobInput.value;
-    formContainer.classList.add('form_display');
-    pop_up.classList.add('pop-up_display_flex');
-
+function open() {
+    popup.classList.add('popup_opened');
 }
-//закрытие попапа
-function exit() {
 
-    formContainer.classList.remove('form_display');
-    pop_up.classList.remove('pop-up_display_flex');
-
+function close() {
+    popup.classList.remove('popup_opened');
 }
-//сохранение формы
-function formSubmitHandler (evt) {
 
+function formSubmitHandler(evt) {
     evt.preventDefault();
-    profileName.textContent = nameInput.value;
-    profileSubName.textContent = jobInput.value;
-
+    profileTitle.textContent = nameInput.value;
+    profileSubtitle.textContent = subnameInput.value;
+    close();
 }
 
-edit.addEventListener('click', clicked);
-close.addEventListener('click', exit);
+document.querySelector('.form')
+edit.addEventListener('click', open);
+buttonExit.addEventListener('click', close);
 formElement.addEventListener('submit', formSubmitHandler);
-formElement.addEventListener('submit', exit);
