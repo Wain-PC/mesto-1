@@ -11,6 +11,8 @@ const profile = document.querySelector('.profile');
 
 function open() {
     popup.classList.add('popup_opened');
+    nameInput.value = profileTitle.textContent;
+    subnameInput.value = profileSubtitle.textContent;
 }
 
 function close() {

@@ -1,5 +1,6 @@
 .form__save {
     border: 0;
+    border-radius: 2px;
     font-family: 'Inter', Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;

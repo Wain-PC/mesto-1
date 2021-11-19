@@ -10,7 +10,7 @@
     .fotos {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
-        max-width: 581px;
+        width: 581px;
         margin-top: 50px;
     }
 }

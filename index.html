@@ -34,58 +34,70 @@
                 <img class="foto__image" src="./images/Карачаевск.png" alt="Карачаевск">
                 <div class="foto__info">
                     <p class="foto__title">Карачаевск</p>
-                    <img class="foto__heart" src="./images/Vector2.png" alt="">
+                    <button class="foto__like" type="button">
+                    <img class="foto__heart" src="./images/Vector2.png" alt="Лайк">
+                </button>
                 </div>
             </div>
             <div class="foto">
                 <img class="foto__image" src="./images/Эльбрус.png" alt="Эльбрус">
                 <div class="foto__info">
                     <p class="foto__title">Гора Эльбрус</p>
-                    <img class="foto__heart" src="./images/Vector2.png" alt="">
+                    <button class="foto__like" type="button">
+                    <img class="foto__heart" src="./images/Vector2.png" alt="Лайк">
+                </button>
                 </div>
             </div>
             <div class="foto">
                 <img class="foto__image" src="./images/Домбай.png" alt="Домбай">
                 <div class="foto__info">
                     <p class="foto__title">Домбай</p>
-                    <img class="foto__heart" src="./images/Vector2.png" alt="">
+                    <button class="foto__like" type="button">
+                    <img class="foto__heart" src="./images/Vector2.png" alt="Лайк">
+                </button>
                 </div>
             </div>
             <div class="foto">
                 <img class="foto__image" src="./images/Эльбрус.png" alt="Эльбрус">
                 <div class="foto__info">
                     <p class="foto__title">Гора Эльбрус</p>
-                    <img class="foto__heart" src="./images/Vector2.png" alt="">
+                    <button class="foto__like" type="button">
+                    <img class="foto__heart" src="./images/Vector2.png" alt="Лайк">
+                </button>
                 </div>
             </div>
             <div class="foto">
                 <img class="foto__image" src="./images/Домбай.png" alt="Домбай">
                 <div class="foto__info">
                     <p class="foto__title">Домбай</p>
-                    <img class="foto__heart" src="./images/Vector2.png" alt="">
+                    <button class="foto__like" type="button">
+                    <img class="foto__heart" src="./images/Vector2.png" alt="Лайк">
+                </button>
                 </div>
             </div>
             <div class="foto">
                 <img class="foto__image" src="./images/Карачаевск.png" alt="Карачаевск">
                 <div class="foto__info">
                     <p class="foto__title">Карачаево-Черкесия</p>
-                    <img class="foto__heart" src="./images/Vector2.png" alt="">
+                    <button class="foto__like" type="button">
+                    <img class="foto__heart" src="./images/Vector2.png" alt="Лайк">
+                </button>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <p class="copyright">© 2020 Mesto Russia</p>
+        <p class="footer__copyright">© 2020 Mesto Russia</p>
     </footer>
     <div class="popup">
-        <div class="popup__container popup__container_display">
-            <form class="form">
+        <div class="popup__container">
+            <form class="form" name="form-edit">
                 <h2 class="form__title">Редактировать профиль</h2>
-                <input class="form__input-name form__input-name_profile" type="text" name="name" value="Жак-Ив Кусто" placeholder="Введите имя" required>
-                <input class="form__input-subname form__input-subname_profile" type="text" name="subname" value="Исследователь океана" placeholder="Введите описание" required>
+                <input class="form__input form__input-name_profile" type="text" name="name" value="Жак-Ив Кусто" placeholder="Введите имя" required>
+                <input class="form__input form__input-subname_profile" type="text" name="subname" value="Исследователь океана" placeholder="Введите описание" required>
                 <button class="form__save" type="submit">Сохранить</button>
             </form>
-            <button class="popup__container-exit" type="reset"></button>
+            <button class="popup__container-exit" type="button"></button>
         </div>
     </div>
     <script src="./script/script.js"></script>

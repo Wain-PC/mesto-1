@@ -1,0 +1,9 @@
+.foto__like {
+    border: 0;
+    background-color: white;
+}
+
+.foto__like:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
