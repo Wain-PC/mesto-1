@@ -9,6 +9,58 @@ const nameInput = formElement.querySelector('.form__input_profile_name');
 const subnameInput = formElement.querySelector('.form__input_profile_subname');
 const profile = document.querySelector('.profile');
 
+const templateEl = document.querySelector('.fotos');
+
+const initialCards = [{
+        name: 'Архыз',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
+        alt: "Архыз",
+    },
+    {
+        name: 'Челябинская область',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg',
+        alt: "Челябинская область",
+    },
+    {
+        name: 'Иваново',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg',
+        alt: "Иваново",
+    },
+    {
+        name: 'Камчатка',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg',
+        alt: "Камчатка",
+    },
+    {
+        name: 'Холмогорский район',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg',
+        alt: "Холмогорский район",
+    },
+    {
+        name: 'Байкал',
+        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg',
+        alt: "Байкал",
+    }
+];
+
+function render() {
+    const html = initialCards
+        .map((item) => {
+            return getItem(item);
+        });
+    templateEl.append(...html);
+}
+
+function getItem(item) {
+    const newCard = templateEl.content.cloneNode(true);
+    const cardTitle = newCard.querySelector('.foto__title');
+    cardTitle.textContent = item.name;
+    const cardImage = newCard.querySelector(".foto__image").src = item.link;
+    return newCard;
+}
+
+render();
+
 function open() {
     popup.classList.add('popup_opened');
     nameInput.value = profileTitle.textContent;

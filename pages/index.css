@@ -20,6 +20,7 @@
 @import url(../blocks/foto/foto.css);
 @import url(../blocks/foto/__heart/foto__heart.css);
 @import url(../blocks/foto/__like/foto__like.css);
+@import url(../blocks/foto/__delete/foto__delete.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/form/form.css);
