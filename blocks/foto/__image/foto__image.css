@@ -5,6 +5,10 @@
     border-top-right-radius: 10px;
     transition: opacity 1s linear .1s;
     overflow: hidden;
-    display: block;
     box-sizing: border-box;
+    object-fit: cover;
+}
+
+.foto__image:hover {
+    cursor: pointer;
 }
